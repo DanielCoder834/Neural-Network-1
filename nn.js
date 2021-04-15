@@ -4,4 +4,10 @@ class NeuralNetwork {
         this.hidden_nodes = numHidden;
         this.output_nodes = numO;
     }
+
+    feedforward(input) {
+        //Lots of Matrix Math 
+        return guess
+
+    }
 }
