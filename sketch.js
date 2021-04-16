@@ -5,6 +5,6 @@ function setup(){
     a.randomize();
     let b = a.transpose();
     console.table(a.matrix);
+    let p = 'Hi'; 
     console.table(b.matrix);
-
 }

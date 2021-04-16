@@ -47,7 +47,7 @@ class Matrix {
 
                for (let j = 0; j < this.cols; j++) {
 
-                   result.matrix[j][i] = this.matrix[i[[j];
+                   result.matrix[j][i] = this.matrix[i][j];
                }
            }
        return result;
