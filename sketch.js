@@ -1,10 +1,7 @@
 
-function setup(){
-
-    let a = new Matrix(2, 3);
-    a.randomize();
-    let b = a.transpose();
-    console.table(a.matrix);
-    let p = 'Hi'; 
-    console.table(b.matrix);
+function setup() {
+    let nn = new NeuralNetwork(2, 2, 1);
+    let input = [1,0];
+    let output = nn.feedforward(input);
+    console.log(output); 
 }
