@@ -20,13 +20,14 @@ let training_data = [
 
 function setup() {
     let nn = new NeuralNetwork(2, 2, 1);
-    for (let i = 0; i < 50000; i++) {
+
+    for (let i = 0; i < 500000; i++) {
         let data = random(training_data);
         nn.train(data.inputs, data.targets);
     }
 
-    console.log(nn.feedforward([0,0]).print());
-    console.log(nn.feedforward([1,0]).print());
-    console.log(nn.feedforward([0,1]).print());
-    console.log(nn.feedforward([1,1]).print());
+    console.log(nn.feedforward([1,0]));
+    console.log(nn.feedforward([0,1]));
+    console.log(nn.feedforward([1,1]));
+    console.log(nn.feedforward([0,0]));
 }

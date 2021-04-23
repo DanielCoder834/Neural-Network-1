@@ -83,17 +83,15 @@ class Matrix {
             }
         }
     }
-
     static transpose(matrix) {
-
-       let result = new Matrix(this.cols, this.rows);
-           for (let i = 0; i < matrix.rows; i++) {
-               for (let j = 0; j < matrix.cols; j++) {
-                   result.data[j][i] = matrix.data[i][j];
-               }
-           }
-       return result;
-    }   
+        let result = new Matrix(matrix.cols, matrix.rows);
+        for (let i = 0; i < matrix.rows; i++) {
+          for (let j = 0; j < matrix.cols; j++) {
+            result.data[j][i] = matrix.data[i][j];
+          }
+        }
+        return result;
+      } 
 
     static multiply(a, b) {
         // Matrix product
@@ -135,6 +133,7 @@ class Matrix {
                 matrix.data[i][j] = func(val);
             }
         }
+        return result;
     }
     print() {    
         console.table(this.data);
