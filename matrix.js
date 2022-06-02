@@ -23,6 +23,7 @@ class Matrix {
     return m;
   }
 
+
   static subtract(a, b) {
     // Return a new Matrix a-b
     let result = new Matrix(a.rows, a.cols);
